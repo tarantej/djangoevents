@@ -24,7 +24,9 @@ SECRET_KEY = '!zvxsu$ak85ou&gu7&6w@qg+h)mc%22)d(bs@23=a6ixaaolo5'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [
+    'djangoeventattendee.herokuapp.com'
+]
 
 # Application definition
 
