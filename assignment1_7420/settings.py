@@ -25,21 +25,21 @@ SECRET_KEY = '!zvxsu$ak85ou&gu7&6w@qg+h)mc%22)d(bs@23=a6ixaaolo5'
 DEBUG = True
 
 ALLOWED_HOSTS = [
+    'localhost',
     'djangoeventattendee.herokuapp.com'
 ]
 
 # Application definition
 
 INSTALLED_APPS = [
-    'bootstrap4',
-    # 'bootstrap_themes',
+    'django.contrib.staticfiles',
     'events.apps.EventsConfig',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
-    'django.contrib.staticfiles',
+
 ]
 
 MIDDLEWARE = [

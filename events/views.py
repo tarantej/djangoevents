@@ -6,3 +6,7 @@ from django.http import HttpResponse
 def events_index(request):
     #   return HttpResponse('Events index Page')
     return render(request, 'events/index.html')
+
+
+def add_events(request):
+    return render(request, 'events/add_event.html')

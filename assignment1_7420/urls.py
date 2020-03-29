@@ -19,9 +19,14 @@ from . import views
 
 
 urlpatterns = [
-    path('', views.index, name='index'),
     path('admin/', admin.site.urls),
-    path('events/', include('events.urls')),
+    path('', views.index, name='index'),
+    path('about/', views.about, name='about'),
+    path('events/', views.events_index, name='events_index'),
+    path('events/add_events', views.add_events, name='add_events'),
+
+    # path('events/', include('events.urls')),
+
 
 ]
 
