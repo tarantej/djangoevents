@@ -12,27 +12,27 @@
               <span class="icon-menu"></span>
               <span class="icon-menu"></span>
             </button>
-            <a href="/" class="navbar-brand"><img src="{% static 'img/logo.png' %}" alt=""></a>
+            <a href="{% url 'index' %}" class="navbar-brand"><img src="{% static 'img/logo.png' %}" alt=""></a>
           </div>
           <div class="collapse navbar-collapse" id="main-navbar">
             <ul class="navbar-nav mr-auto w-100 justify-content-end">
               <li class="nav-item">
-                <a class="nav-link" href="/">
+                <a class="nav-link" href="{% url 'index' %}">
                   Home
                 </a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="/about">
+                <a class="nav-link" href="{% url 'about' %}">
                   About
                 </a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="/events">
+                <a class="nav-link" href="{% url 'events_index' %}">
                   Events
                 </a>
               </li>
               <li class="nav-item">
-                 <a class="nav-link" href="/events/add_events">
+                 <a class="nav-link" href="{% url 'add_events' %}">
                   Add Event
                 </a>
               </li>
@@ -68,32 +68,32 @@
         <!-- Mobile Menu Start -->
         <ul class="mobile-menu">
           <li>
-            <a class="page-scrool" href="/">Home</a>
+            <a class="page-scrool" href="{% url 'index' %}">Home</a>
           </li>
           <li>
-            <a class="page-scrool" href="/about">About</a>
+            <a class="page-scrool" href="{% url 'about' %}">About</a>
           </li>
           <li>
-             <a class="page-scroll" href="/events">Events</a>
+             <a class="page-scroll" href="{% url 'events_index' %}">Events</a>
           </li>
           <li>
-            <a class="page-scroll" href="/events/add_events">Add Events</a>
+            <a class="page-scroll" href="{% url 'add_events' %}">Add Events</a>
           </li>
-          <li>
-            <a class="page-scroll" href="#gallery">Gallery</a>
-          </li>
-          <li>
-            <a class="page-scroll" href="#faq">Faq</a>
-          </li>
-          <li>
-            <a class="page-scroll" href="#sponsors">Sponsors</a>
-          </li>
-          <li>
-            <a class="page-scroll" href="#pricing">pricing</a>
-          </li>
-          <li>
-            <a class="page-scroll" href="#google-map-area">Contact</a>
-          </li>
+{#          <li>#}
+{#            <a class="page-scroll" href="#gallery">Gallery</a>#}
+{#          </li>#}
+{#          <li>#}
+{#            <a class="page-scroll" href="#faq">Faq</a>#}
+{#          </li>#}
+{#          <li>#}
+{#            <a class="page-scroll" href="#sponsors">Sponsors</a>#}
+{#          </li>#}
+{#          <li>#}
+{#            <a class="page-scroll" href="#pricing">pricing</a>#}
+{#          </li>#}
+{#          <li>#}
+{#            <a class="page-scroll" href="#google-map-area">Contact</a>#}
+{#          </li>#}
         </ul>
         <!-- Mobile Menu End -->
 
