@@ -25,6 +25,7 @@ SECRET_KEY = '!zvxsu$ak85ou&gu7&6w@qg+h)mc%22)d(bs@23=a6ixaaolo5'
 DEBUG = True
 
 ALLOWED_HOSTS = [
+    'http://127.0.0.1:8000/',
     'localhost',
     'djangoeventattendee.herokuapp.com'
 ]
@@ -32,6 +33,7 @@ ALLOWED_HOSTS = [
 # Application definition
 
 INSTALLED_APPS = [
+    'django_extensions',
     'django.contrib.staticfiles',
     'events.apps.EventsConfig',
     'django.contrib.admin',

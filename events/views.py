@@ -1,20 +1,25 @@
 from django.shortcuts import render
+from django.template import context
+
+from .models import EventsList
 
 
 # Create your views here.
-from events.models import EventsList
-
-
 def events_index(request):
-
     events = EventsList.objects.all()
 
-    context = {
-        'Event': events
+    test = {'name': 'Taran'}
+
+    event_context = {
+        'Events': events
     }
 
-    return render(request, 'events/index.html', context)
+    return render(request, 'events/index.html', event_context)
 
 
 # def add_events(request):
 #     return render(request, 'events/add_event.html')
+
+
+def event(request, event_name):
+    return render(request, 'events/event.html', event_context)
