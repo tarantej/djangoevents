@@ -1,0 +1,101 @@
+
+{% load static %}
+
+      <!-- Navbar Start -->
+      <nav class="navbar navbar-expand-lg fixed-top scrolling-navbar">
+        <div class="container">
+          <!-- Brand and toggle get grouped for better mobile display -->
+          <div class="navbar-header">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-navbar" aria-controls="main-navbar" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+              <span class="icon-menu"></span>
+              <span class="icon-menu"></span>
+              <span class="icon-menu"></span>
+            </button>
+            <a href="{% url 'index' %}" class="navbar-brand"><img src="{% static 'img/logo.png' %}" alt=""></a>
+          </div>
+          <div class="collapse navbar-collapse" id="main-navbar">
+            <ul class="navbar-nav mr-auto w-100 justify-content-end">
+              <li class="nav-item">
+                <a class="nav-link" href="{% url 'index' %}">
+                  Home
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="{% url 'about' %}">
+                  About
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="{% url 'events_index' %}">
+                  Events
+                </a>
+              </li>
+{#              <li class="nav-item">#}
+{#                 <a class="nav-link" href="{% url 'add_events' %}">#}
+{#                  Add Event#}
+{#                </a>#}
+{#              </li>#}
+{#              <li class="nav-item">#}
+{#                <a class="nav-link" href="#gallery">#}
+{#                  Gallery#}
+{#                </a>#}
+{#              </li>#}
+{#              <li class="nav-item">#}
+{#                <a class="nav-link" href="#faq">#}
+{#                  Faq#}
+{#                </a>#}
+{#              </li>#}
+{#              <li class="nav-item">#}
+{#                <a class="nav-link" href="#sponsors">#}
+{#                  Sponsors#}
+{#                </a>#}
+{#              </li>#}
+{#              <li class="nav-item">#}
+{#                <a class="nav-link" href="#pricing">#}
+{#                  pricing#}
+{#                </a>#}
+{#              </li>#}
+{#              <li class="nav-item">#}
+{#                <a class="nav-link" href="#google-map-area">#}
+{#                  Contact#}
+{#                </a>#}
+{#              </li>#}
+            </ul>
+          </div>
+        </div>
+
+        <!-- Mobile Menu Start -->
+        <ul class="mobile-menu">
+          <li>
+            <a class="page-scrool" href="{% url 'index' %}">Home</a>
+          </li>
+          <li>
+            <a class="page-scrool" href="{% url 'about' %}">About</a>
+          </li>
+          <li>
+             <a class="page-scroll" href="{% url 'events_index' %}">Events</a>
+          </li>
+{#          <li>#}
+{#            <a class="page-scroll" href="{% url 'add_events' %}">Add Events</a>#}
+{#          </li>#}
+{#          <li>#}
+{#            <a class="page-scroll" href="#gallery">Gallery</a>#}
+{#          </li>#}
+{#          <li>#}
+{#            <a class="page-scroll" href="#faq">Faq</a>#}
+{#          </li>#}
+{#          <li>#}
+{#            <a class="page-scroll" href="#sponsors">Sponsors</a>#}
+{#          </li>#}
+{#          <li>#}
+{#            <a class="page-scroll" href="#pricing">pricing</a>#}
+{#          </li>#}
+{#          <li>#}
+{#            <a class="page-scroll" href="#google-map-area">Contact</a>#}
+{#          </li>#}
+        </ul>
+        <!-- Mobile Menu End -->
+
+      </nav>
+      <!-- Navbar End -->
