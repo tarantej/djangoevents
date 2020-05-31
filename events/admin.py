@@ -44,7 +44,7 @@ class DelegateAdmin(admin.ModelAdmin):
 
     # Show Delegate Details
 
-    list_display = ('delgate_name', 'company_name', 'position', 'event_registered_for')
+    list_display = ('delegate_name', 'company_name', 'position', 'event_registered_for')
 
     # Show 20 Delegates per page
 

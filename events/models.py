@@ -39,7 +39,7 @@ class Attendee(models.Model):
 
 class Delegates(models.Model):
     delegate_name = models.CharField(max_length=250)
-    company_name = models.CharField(max_length=250)
+    company_name = models.ForeignKey('Company', related_name='delegates', on_delete=models.CASCADE)
     position = models.CharField(max_length=250)
     event_registered_for = models.ForeignKey('EventsList', related_name='delegates', on_delete=models.CASCADE)
 
@@ -49,9 +49,6 @@ class Delegates(models.Model):
     class Meta:
         verbose_name_plural = 'Delegate'
 
-
-
-
 #   Location Model
 
 class Location(models.Model):
@@ -60,6 +57,14 @@ class Location(models.Model):
     def __str__(self):
         return self.name
 
+#   Company / Organization Model
+
+class Company(models.Model):
+        name = models.CharField(max_length=250)
+
+        def __str__(self):
+            return self.name
+
     # Notifications
     # Messages
     # Custom Image Model
@@ -67,8 +72,6 @@ class Location(models.Model):
     # Blog
     # Booking
     # Sponsors
-    # Organiztions
+    # Organizations
     # Terms and Conditions / Custom Event Requirements
-
-    #journal.md in GitHub   ()
 
