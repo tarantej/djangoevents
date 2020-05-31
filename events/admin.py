@@ -8,6 +8,8 @@ from .models import (
     Attendee,
     Delegates,
     Company,
+    Blog,
+    Sponsors,
 )
 
 
@@ -67,3 +69,4 @@ admin.site.register(Location)
 admin.site.register(Company)
 admin.site.register(Attendee, AttendeeAdmin)
 admin.site.register(Delegates, DelegateAdmin)
+

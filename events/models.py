@@ -60,18 +60,38 @@ class Location(models.Model):
 #   Company / Organization Model
 
 class Company(models.Model):
-        name = models.CharField(max_length=250)
+        company_id = models.AutoField(primary_key=True)
+        company_name = models.CharField(max_length=250)
+        company_name_id = models.CharField(max_length=20, blank=True)
 
         def __str__(self):
-            return self.name
+            return self.company_name
+
+#   Blog
+class Blog(models.Model):
+    post_title =  models.CharField(max_length=250)
+    post_date = models.DateField()
+    post_desc = models.TextField(blank=True)
+    featured_image = models.ImageField(upload_to='images/', blank=True)
+    is_published = models.BooleanField(default=True)
+
+    def __str__(self):
+        return self.post_title
+
+
+#   Sponsors
+
+class Sponsors(models.Model):
+    brand_name = models.CharField(max_length=250)
+    brand_type = models.CharField(max_length=250)
+    parent_company = models.CharField(max_length=250)
+    for_event  = models.CharField(max_length=250)
+
 
     # Notifications
     # Messages
     # Custom Image Model
     # Recurring Event Field
-    # Blog
     # Booking
-    # Sponsors
-    # Organizations
     # Terms and Conditions / Custom Event Requirements
 
