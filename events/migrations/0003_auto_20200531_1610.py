@@ -17,5 +17,20 @@ class Migration(migrations.Migration):
                 ('id', models.AutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
                 ('name', models.CharField(max_length=250)),
             ],
-        )
+        ),
+        migrations.AlterModelOptions(
+            name='delegates',
+            options={'verbose_name_plural': 'Delegate'},
+        ),
+        migrations.AlterField(
+            model_name='eventslist',
+            name='location',
+            field=models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, related_name='events', to='events.Location'),
+            preserve_default=False,
+        ),
+        migrations.AlterField(
+            model_name='delegates',
+            name='company_name',
+            field=models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, related_name='delegates', to='events.Company'),
+        ),
     ]
