@@ -42,7 +42,26 @@ class DelegateAdmin(admin.ModelAdmin):
     # verbose_name_plural = 'Delegate'
     pass
 
+    # Show Delegate Details
+
+    list_display = ('delgate_name', 'company_name', 'position', 'event_registered_for')
+
+    # Show 20 Delegates per page
+
+    list_per_page = 20
+
+class AttendeeAdmin(admin.ModelAdmin):
+
+    #Show Attendee Details
+
+    list_display = ('first_name', 'last_name', 'phone', 'email')
+
+    #Show 20 Attendees per page
+
+    list_per_page = 20
+
+
 admin.site.register(EventsList, EventsAdmin)
 admin.site.register(Location)
-admin.site.register(Attendee)
+admin.site.register(Attendee, AttendeeAdmin)
 admin.site.register(Delegates, DelegateAdmin)
