@@ -15,5 +15,11 @@
       <jdbc-driver>org.postgresql.Driver</jdbc-driver>
       <jdbc-url>jdbc:postgresql://127.0.0.1:5432/Events</jdbc-url>
     </data-source>
+    <data-source source="LOCAL" name="Heroku" uuid="d6b46ead-7c12-45a4-b265-c24b6ee990d4">
+      <driver-ref>postgresql</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>org.postgresql.Driver</jdbc-driver>
+      <jdbc-url>jdbc:postgresql://ec2-34-230-149-169.compute-1.amazonaws.com:5432/d4u0ete0bfnv17</jdbc-url>
+    </data-source>
   </component>
 </project>

@@ -14,7 +14,7 @@ from datetime import date
 class EventsList(models.Model):
     event_name = models.CharField(max_length=200)
     event_date = models.DateField(auto_now=False, auto_now_add=False)
-    location = models.ForeignKey('Location', related_name='events', on_delete=models.CASCADE)
+    location = models.ForeignKey('Location', related_name='events', on_delete=models.CASCADE, blank=True)
     event_desc = models.TextField(blank=True)
     featured_image = models.ImageField(upload_to='images/', blank=True)
     is_published = models.BooleanField(default=True)
@@ -39,7 +39,7 @@ class Attendee(models.Model):
 
 class Delegates(models.Model):
     delegate_name = models.CharField(max_length=250)
-    company_name = models.ForeignKey('Company', related_name='delegates', on_delete=models.CASCADE)
+    company_name = models.CharField(max_length=250)
     position = models.CharField(max_length=250)
     event_registered_for = models.ForeignKey('EventsList', related_name='delegates', on_delete=models.CASCADE)
 

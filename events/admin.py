@@ -7,6 +7,7 @@ from .models import (
     Location,
     Attendee,
     Delegates,
+    Company,
 )
 
 
@@ -63,5 +64,6 @@ class AttendeeAdmin(admin.ModelAdmin):
 
 admin.site.register(EventsList, EventsAdmin)
 admin.site.register(Location)
+admin.site.register(Company)
 admin.site.register(Attendee, AttendeeAdmin)
 admin.site.register(Delegates, DelegateAdmin)

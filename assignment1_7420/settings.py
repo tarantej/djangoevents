@@ -28,7 +28,8 @@ DEBUG = True
 ALLOWED_HOSTS = [
     'http://127.0.0.1:8000/',
     'localhost',
-    'djangoeventattendee.herokuapp.com'
+    'djangoeventattendee.herokuapp.com',
+    'djangoevents.live'
 ]
 
 # Application definition
@@ -81,14 +82,21 @@ WSGI_APPLICATION = 'assignment1_7420.wsgi.application'
 
 DATABASES = {
     'default': {
-        # 'ENGINE': 'django.db.backends.sqlite3',
-        # 'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': os.path.join(BASE_DIR, 'db.postgresql'),
         'ENGINE': 'django.db.backends.postgresql',
         'NAME': 'Events',
         'USER': 'postgres',
         'PASSWORD': '1234',
         'HOST': '127.0.0.1',
         'PORT': '5432',
+
+        # 'ENGINE': 'django.db.backends.postgresql',
+        # 'NAME': 'd4u0ete0bfnv17',
+        # 'USER': 'kdtvmrjgqazhvw',
+        # 'PASSWORD': '5965efc227cbc84f1e3f9eff040455e2286d33447700c05f05ebb3c594891676',
+        # 'HOST': 'ec2-34-230-149-169.compute-1.amazonaws.com',
+        # 'PORT': '5432',
     }
 }
 
