@@ -64,9 +64,22 @@ class AttendeeAdmin(admin.ModelAdmin):
     list_per_page = 20
 
 
+class BlogAdmin(admin.ModelAdmin):
+
+    #Show Blog Posts
+
+    list_display = ('post_title', 'post_date', 'is_published')
+
+    #Show 20 Posts per page
+
+    list_per_page = 20
+
+
 admin.site.register(EventsList, EventsAdmin)
 admin.site.register(Location)
 admin.site.register(Company)
+admin.site.register(Blog, BlogAdmin)
+admin.site.register(Sponsors)
 admin.site.register(Attendee, AttendeeAdmin)
 admin.site.register(Delegates, DelegateAdmin)
 
