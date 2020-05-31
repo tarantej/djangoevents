@@ -82,8 +82,7 @@ WSGI_APPLICATION = 'assignment1_7420.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql',
-        'NAME': os.path.join(BASE_DIR, 'db.postgresql'),
+        
         'ENGINE': 'django.db.backends.postgresql',
         'NAME': 'Events',
         'USER': 'postgres',
