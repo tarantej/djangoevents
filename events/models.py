@@ -17,7 +17,7 @@ class EventsList(models.Model):
     event_date = models.DateField(auto_now=False, auto_now_add=False)
     location = models.ForeignKey('Location', related_name='events', on_delete=models.CASCADE, blank=True)
     event_desc = models.TextField(blank=True)
-    featured_image = models.ImageField(upload_to='images/', blank=True)
+    featured_image = models.ImageField(upload_to='../img/events', blank=True)
     is_published = models.BooleanField(default=True)
 
     def __str__(self):

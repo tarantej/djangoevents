@@ -13,21 +13,7 @@ https://docs.djangoproject.com/en/3.0/ref/settings/
 import os
 import django_heroku
 
-#   AWS Access Keys
 
-AWS_ACCESS_KEY_ID = 'AKIAJAZXKTY7K3DENXEA'
-AWS_SECRET_ACCESS_KEY = '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'
-DEFAULT_FILE_STORAGE = 'storages.backends.s3boto3.S3Boto3Storage'
-AWS_STORAGE_BUCKET_NAME = 'django-events-images'
-AWS_S3_REGION_NAME = 'ap-southeast-2'
-AWS_S3_ENDPOINT_URL = 'https://s3-ap-southeast-2.amazonaws.com'
-
-S3DIRECT_DESTINATIONS = {
-    'primary_destination': {
-        'key': 'images/',
-        'allowed': ['image/jpg', 'image/jpeg', 'image/png', 'video/mp4'],
-    },
-}
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -51,7 +37,7 @@ ALLOWED_HOSTS = [
 # Application definition
 
 INSTALLED_APPS = [
-    's3direct',
+    'storages',
     'django.contrib.staticfiles',
     'events.apps.EventsConfig',
     'django.contrib.admin',
@@ -107,13 +93,19 @@ DATABASES = {
         'HOST': '127.0.0.1',
         'PORT': '5432',
 
-        # 'ENGINE': 'django.db.backends.postgresql',
-        # 'NAME': 'd4u0ete0bfnv17',
-        # 'USER': 'kdtvmrjgqazhvw',
-        # 'PASSWORD': '5965efc227cbc84f1e3f9eff040455e2286d33447700c05f05ebb3c594891676',
-        # 'HOST': 'ec2-34-230-149-169.compute-1.amazonaws.com',
-        # 'PORT': '5432',
-    }
+    }  ,
+
+#PostgreSQL on Heroku via Amazon AWS
+
+    # 'default': {
+    #
+    #     'ENGINE': 'django.db.backends.postgresql',
+    #     'NAME': 'd4u0ete0bfnv17',
+    #     'USER': 'kdtvmrjgqazhvw',
+    #     'PASSWORD': '5965efc227cbc84f1e3f9eff040455e2286d33447700c05f05ebb3c594891676',
+    #     'HOST': 'ec2-34-230-149-169.compute-1.amazonaws.com',
+    #     'PORT': '5432',
+    # }
 }
 
 # Password validation
@@ -155,7 +147,24 @@ STATIC_URL = '/static/'
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, 'static')
 ]
-STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
+
+# Loading Static images from Amazon S3 Bucket
+
+#   AWS Access Keys
+
+AWS_ACCESS_KEY_ID = 'AKIAJAZXKTY7K3DENXEA'
+AWS_SECRET_ACCESS_KEY = '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'
+AWS_STORAGE_BUCKET_NAME = 'django-events-images'
+AWS_S3_REGION_NAME = 'ap-southeast-2'
+AWS_S3_ENDPOINT_URL = 'https://s3-ap-southeast-2.amazonaws.com'
+DEFAULT_FILE_STORAGE = 'storages.backends.s3boto3.S3Boto3Storage'
+STATICFILES_STORAGE = 'storages.backends.s3boto3.S3Boto3Storage'
+#AWS_LOCATION = ''
+#AWS_S3_ADDRESSING_STYLE = ''
+
+
+
+# STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
  # Media Folder Settings
 
