@@ -4,6 +4,7 @@
 
 from django.db import models
 from datetime import date
+from s3direct.fields import S3DirectField
 
 
 # Create your models here.
@@ -107,6 +108,9 @@ class Sponsors(models.Model):
     brand_type = models.CharField(max_length=250)
     parent_company = models.CharField(max_length=250)
     for_event  = models.CharField(max_length=250)
+
+    def __str__(self):
+        return self.brand_name
 
 
 #   Booking Details

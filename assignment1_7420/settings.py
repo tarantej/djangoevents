@@ -13,6 +13,22 @@ https://docs.djangoproject.com/en/3.0/ref/settings/
 import os
 import django_heroku
 
+#   AWS Access Keys
+
+AWS_ACCESS_KEY_ID = 'AKIAJAZXKTY7K3DENXEA'
+AWS_SECRET_ACCESS_KEY = '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'
+DEFAULT_FILE_STORAGE = 'storages.backends.s3boto3.S3Boto3Storage'
+AWS_STORAGE_BUCKET_NAME = 'django-events-images'
+AWS_S3_REGION_NAME = 'ap-southeast-2'
+AWS_S3_ENDPOINT_URL = 'https://s3-ap-southeast-2.amazonaws.com'
+
+S3DIRECT_DESTINATIONS = {
+    'primary_destination': {
+        'key': 'images/',
+        'allowed': ['image/jpg', 'image/jpeg', 'image/png', 'video/mp4'],
+    },
+}
+
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
@@ -35,6 +51,7 @@ ALLOWED_HOSTS = [
 # Application definition
 
 INSTALLED_APPS = [
+    's3direct',
     'django.contrib.staticfiles',
     'events.apps.EventsConfig',
     'django.contrib.admin',
@@ -140,9 +157,11 @@ STATICFILES_DIRS = [
 ]
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
-#   Media Folder Settings
+ # Media Folder Settings
 
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 MEDIA_URL = '/media/'
+
+
 
 django_heroku.settings(locals())
