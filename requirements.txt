@@ -11,4 +11,5 @@ pytz
 six
 sqlparse
 django-storages
+django-s3direct
 whitenoise
