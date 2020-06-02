@@ -10,5 +10,5 @@ psycopg2
 pytz
 six
 sqlparse
-storages
+django-storages
 whitenoise
