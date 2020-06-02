@@ -13,8 +13,6 @@ https://docs.djangoproject.com/en/3.0/ref/settings/
 import os
 import django_heroku
 
-
-
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
@@ -84,7 +82,7 @@ WSGI_APPLICATION = 'assignment1_7420.wsgi.application'
 
 DATABASES = {
     'default': {
-        
+
         'ENGINE': 'django.db.backends.postgresql',
         'NAME': 'Events',
         'USER': 'postgres',
@@ -92,9 +90,9 @@ DATABASES = {
         'HOST': '127.0.0.1',
         'PORT': '5432',
 
-    }  ,
+    },
 
-#PostgreSQL on Heroku via Amazon AWS
+    # PostgreSQL on Heroku via Amazon AWS
 
     # 'default': {
     #
@@ -158,18 +156,15 @@ AWS_S3_REGION_NAME = 'ap-southeast-2'
 AWS_S3_ENDPOINT_URL = 'https://s3-ap-southeast-2.amazonaws.com'
 DEFAULT_FILE_STORAGE = 'storages.backends.s3boto3.S3Boto3Storage'
 STATICFILES_STORAGE = 'storages.backends.s3boto3.S3Boto3Storage'
-#AWS_LOCATION = ''
-#AWS_S3_ADDRESSING_STYLE = ''
-
+# AWS_LOCATION = ''
+# AWS_S3_ADDRESSING_STYLE = ''
 
 
 # STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
- # Media Folder Settings
+# Media Folder Settings
 
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 MEDIA_URL = '/media/'
-
-
 
 django_heroku.settings(locals())
