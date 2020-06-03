@@ -28,4 +28,6 @@ urlpatterns = [
                   # path('events/', views.events_index, name='events_index'),
                   # path('events/add_events', views.add_events, name='add_events'),
 
-              ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+              ]
+
+              # + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
