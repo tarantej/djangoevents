@@ -1,14 +1,19 @@
-from faker import Faker
-fake = Faker()
-# Set the seed value of the shared `random.Random` object
-# across all internal generators that will ever be created
-Faker.seed(0)
+# using SendGrid's Python Library
+# https://github.com/sendgrid/sendgrid-python
+import os
+from sendgrid import SendGridAPIClient
+from sendgrid.helpers.mail import Mail
 
-# Creates and seeds a unique `random.Random` object for
-# each internal generator of this `Faker` instance
-fake.seed_instance(0)
-
-# Creates and seeds a unique `random.Random` object for
-# the en_US internal generator of this `Faker` instance
-fake.seed_locale('en_US', 0)
-
+message = Mail(
+    from_email='test@sendgrid.com',
+    to_emails='tarantejsingh@gmail.com',
+    subject='Sending with Twilio SendGrid is Fun',
+    html_content='<strong>and easy to do anywhere, even with Python</strong>')
+try:
+    sg = SendGridAPIClient(os.environ.get('SENDGRID_API_KEY'))
+    response = sg.send(message)
+    print(response.status_code)
+    print(response.body)
+    print(response.headers)
+except Exception as e:
+    print(e.message)

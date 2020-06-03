@@ -14,7 +14,7 @@ Including another URLconf
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
 from django.conf import settings
-from django.conf.urls.static import static
+# from django.conf.urls.static import static
 from django.contrib import admin
 from django.urls import include, path
 from . import views
@@ -24,7 +24,6 @@ urlpatterns = [
                   path('', views.index, name='index'),
                   path('about/', views.about, name='about'),
                   path('events/', include('events.urls')),
-                path('s3direct/', include('s3direct.urls')),
 
                   # path('events/', views.events_index, name='events_index'),
                   # path('events/add_events', views.add_events, name='add_events'),

@@ -1,5 +1,4 @@
 from django.contrib import admin
-from s3direct.fields import S3DirectField
 
 # Register your models here.
 

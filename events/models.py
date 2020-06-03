@@ -4,7 +4,6 @@
 
 from django.db import models
 from datetime import date
-from s3direct.fields import S3DirectField
 
 
 # Create your models here.
