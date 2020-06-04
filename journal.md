@@ -72,7 +72,32 @@ Django already adds the name of the model along with name of the model, for exam
 27-May 20	Updating Heroku 				Maybe conflicts with pip freeze, especially with verisons, unecessary or unused modules. Recheck Procfile has indeed been uploaded to Heroku and has been identified for the same. At the moment, took Procfiles and requirements.txt from the example python app. Just need to change the app it is calling																				
 30-May 20	Uploading Project to Heroku				Finally got the project uploaded to Heroku with great effort. The problem was in the manage.py file calling to import library which was deprectated in python 2.7																				
 1-June 20	Configured Amazon S3 for Static files		1 Hour		Installed the required packages and testted in with existing code																				
-2-June 20	Configured Amazon S3 for Static files			ModuleNotFoundError	Why heroku calls to packages that are not even being used???																				
+2-June 20	Configured Amazon S3 for Static files			ModuleNotFoundError	Why heroku calls to packages that are not even being used???	
+
+4-June 20	Updating SendGrid on Project			NameError at /
+name 'static' is not defined	
+
+If you have this line in main project urls.py file please remove it 
+
+"+ static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)"
+
+4-June 20	Updating SendGrid on Project			Unauthorized error' object has no attribute 'message' sendgrid	
+
+Error occurs when tring to integrate sendgrid sample with python 
+
+"+ static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)"	
+
+5-June 20	Updating SendGrid on Project			Unauthorized error' object has no attribute 'message' sendgrid	
+
+Error occurs when tring to integrate sendgrid sample with python. Mainly Authentication Error / Permission Error
+
+Used SendGrid settings to generate API key, authenticated domain via Domain Authentication Service and sent test email after following instructions
+
+API Keys: https://sendgrid.com/docs/ui/account-and-settings/api-keys/
+
+Sender / Domain Authentication: https://app.sendgrid.com/settings/sender_auth
+
+Integrating SendGrid in Python: https://app.sendgrid.com/guide/integrate/langs/python																				
 																									
 																									
 																									
