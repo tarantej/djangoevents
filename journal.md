@@ -98,7 +98,11 @@ API Keys: https://sendgrid.com/docs/ui/account-and-settings/api-keys/
 Sender / Domain Authentication: https://app.sendgrid.com/settings/sender_auth
 
 Integrating SendGrid in Python: https://app.sendgrid.com/guide/integrate/langs/python																				
-																									
+22 June 2020
+
+Adding multiple databases in Django
+To update local and online database side by side
+https://docs.djangoproject.com/en/3.0/topics/db/multi-db/
 																									
 																									
 																									
