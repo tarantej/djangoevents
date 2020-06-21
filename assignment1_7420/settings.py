@@ -81,7 +81,8 @@ WSGI_APPLICATION = 'assignment1_7420.wsgi.application'
 # https://docs.djangoproject.com/en/3.0/ref/settings/#databases
 
 DATABASES = {
-    'default': {
+    'default' : {},
+    'localhost': {
 
         'ENGINE': 'django.db.backends.postgresql',
         'NAME': 'Events',
@@ -94,15 +95,15 @@ DATABASES = {
 
     # PostgreSQL on Heroku via Amazon AWS
 
-    # 'default': {
-    #
-    #     'ENGINE': 'django.db.backends.postgresql',
-    #     'NAME': 'd4u0ete0bfnv17',
-    #     'USER': 'kdtvmrjgqazhvw',
-    #     'PASSWORD': '5965efc227cbc84f1e3f9eff040455e2286d33447700c05f05ebb3c594891676',
-    #     'HOST': 'ec2-34-230-149-169.compute-1.amazonaws.com',
-    #     'PORT': '5432',
-    # }
+    'heroku': {
+
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'd4u0ete0bfnv17',
+        'USER': 'kdtvmrjgqazhvw',
+        'PASSWORD': '5965efc227cbc84f1e3f9eff040455e2286d33447700c05f05ebb3c594891676',
+        'HOST': 'ec2-34-230-149-169.compute-1.amazonaws.com',
+        'PORT': '5432',
+    }
 }
 
 # Password validation
