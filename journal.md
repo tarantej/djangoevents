@@ -104,7 +104,13 @@ Adding multiple databases in Django
 To update local and online database side by side
 https://docs.djangoproject.com/en/3.0/topics/db/multi-db/
 																									
-																									
+23 June 2020
+
+Following Django REST Framework API tutorial on YouTube
+
+https://www.youtube.com/watch?v=Uyei2iDA4Hs&t=1047s
+
+API endpoint not working as expected
 																									
 																									
 																									
