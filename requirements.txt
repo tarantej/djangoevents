@@ -1,7 +1,7 @@
 asgiref
 boto3
 dj-database-url
-django
+django~=3.0.7
 django-heroku
 gunicorn
 Jinja2
@@ -12,5 +12,6 @@ pytz
 six
 sqlparse
 django-storages
-django-s3direct
 whitenoise
+djangorestframework~=3.11.0
+setuptools~=41.1.0
