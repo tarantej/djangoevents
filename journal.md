@@ -121,6 +121,9 @@ https://www.youtube.com/watch?v=Uyei2iDA4Hs&t=1047s
 3 July 2020
 
 Uploaded Django REST API branch to heroku. Tested GET and POST Requests.
+
+Tutorial: https://devcenter.heroku.com/articles/git
+
 URL: http://djangoevents.live/app/api/app
 
 Sample Parameters
