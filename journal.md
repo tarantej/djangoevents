@@ -112,9 +112,27 @@ https://www.youtube.com/watch?v=Uyei2iDA4Hs&t=1047s
 
 API endpoint not working as expected
 																									
+2 July 2020
+
+Re did Django REST Framework API tutorial on YouTube. It seems I had not pushed the code to Github previously. Re did the tutorial and was able to successfully run the api in Django projects. Tested on local server via Postman. Successful
+
+https://www.youtube.com/watch?v=Uyei2iDA4Hs&t=1047s
 																									
-																									
-																									
+3 July 2020
+
+Uploaded Django REST API branch to heroku. Tested GET and POST Requests.
+URL: http://djangoevents.live/app/api/app
+
+Sample Parameters
+
+Content-Type: JSON
+
+{
+	"eventName" : "Fundamentals of Tribo-Sensing",
+	"eventDate" : "2020-05-13",
+	"location" : "London, United Kingdom",
+	"eventDescription" : "The Fundamentals of Tribo-Sensing Course is essentially designed to give a better understanding of successful mechanism operations on all scales. The primary agenda of this course is to deliver insights into the principles of Tribology. The course offers sublime latitude to obtain an overview of the vast field of Tribo- Sensing. It will address the metrology & sensing techniques of tribology systems along with the core concepts and understanding of various tools. This program presents thorough insights into tribology focusing on such fundamental concepts as lubrication, traction, friction wear mechanisms, and surface engineering."
+}
 																									
 																									
 																									
