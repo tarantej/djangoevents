@@ -113,7 +113,7 @@
   <body class="logged-in env-production page-responsive page-blob">
     
 
-    <div class="position-relative js-header-wrapper ">
+    <div class="position-relative js-HD-wrapper ">
       <a href="#start-of-content" class="p-3 bg-blue text-white show-on-focus js-skip-to-content">Skip to content</a>
       <span class="Progress progress-pjax-loader position-fixed width-full js-pjax-loader-bar">
         <span class="progress-pjax-loader-bar top-0 left-0" style="width: 0%;"></span>
@@ -124,7 +124,7 @@
 
 
 
-          <header class="Header py-lg-0 js-details-container Details flex-wrap flex-lg-nowrap p-responsive" role="banner">
+          <HD class="Header py-lg-0 js-details-container Details flex-wrap flex-lg-nowrap p-responsive" role="banner">
   <div class="Header-item d-none d-lg-flex">
     <a class="Header-link" href="https://github.com/" data-hotkey="g d"
   aria-label="Homepage " data-ga-click="Header, go to dashboard, icon:logo">
@@ -140,7 +140,7 @@
   </div>
 
   <div class="Header-item Header-item--full flex-column flex-lg-row width-full flex-order-2 flex-lg-order-none mr-0 mr-lg-3 mt-3 mt-lg-0 Details-content--hidden">
-      <div class="header-search flex-self-stretch flex-lg-self-auto mr-0 mr-lg-3 mb-3 mb-lg-0 scoped-search site-scoped-search js-site-search position-relative js-jump-to"
+      <div class="HD-search flex-self-stretch flex-lg-self-auto mr-0 mr-lg-3 mb-3 mb-lg-0 scoped-search site-scoped-search js-site-search position-relative js-jump-to"
   role="combobox"
   aria-owns="jump-to-results"
   aria-label="Search or jump to"
@@ -149,9 +149,9 @@
 >
   <div class="position-relative">
     <!-- '"` --><!-- </textarea></xmp> --></option></form><form class="js-site-search-form" role="search" aria-label="Site" data-scope-type="Repository" data-scope-id="52136436" data-scoped-search-url="/sendgrid/python-http-client/search" data-unscoped-search-url="/search" action="/sendgrid/python-http-client/search" accept-charset="UTF-8" method="get">
-      <label class="form-control input-sm header-search-wrapper p-0 header-search-wrapper-jump-to position-relative d-flex flex-justify-between flex-items-center js-chromeless-input-container">
+      <label class="form-control input-sm HD-search-wrapper p-0 HD-search-wrapper-jump-to position-relative d-flex flex-justify-between flex-items-center js-chromeless-input-container">
         <input type="text"
-          class="form-control input-sm header-search-input jump-to-field js-jump-to-field js-site-search-focus js-site-search-field is-clearable"
+          class="form-control input-sm HD-search-input jump-to-field js-jump-to-field js-site-search-focus js-site-search-field is-clearable"
           data-hotkey="s,/"
           name="q"
           value=""
@@ -168,7 +168,7 @@
           >
           <input type="hidden" value="AJ6Gkp2IT0uz7TtYrZeStWWVPuqSMwqWZN4R3bdsvJp9msIfa1dDwdsBlFtSiUWOGqbwupYiaOb801y1KwDm+Q==" data-csrf="true" class="js-data-jump-to-suggestions-path-csrf" />
           <input type="hidden" class="js-site-search-type-field" name="type" >
-            <img src="https://github.githubassets.com/images/search-key-slash.svg" alt="" class="mr-2 header-search-key-slash">
+            <img src="https://github.githubassets.com/images/search-key-slash.svg" alt="" class="mr-2 HD-search-key-slash">
 
             <div class="Box position-absolute overflow-hidden d-none jump-to-suggestions js-jump-to-suggestions-container">
               
@@ -373,7 +373,7 @@
 
 
   <div role="none" class="dropdown-divider"></div>
-  <div class="dropdown-header">
+  <div class="dropdown-HD">
     <span title="sendgrid/python-http-client">This repository</span>
   </div>
     <a role="menuitem" class="dropdown-item" href="/sendgrid/python-http-client/issues/new/choose" data-ga-click="Header, create new issue" data-skip-pjax>
@@ -404,7 +404,7 @@
     <span class="dropdown-caret"></span>
   </summary>
   <details-menu class="dropdown-menu dropdown-menu-sw mt-n2" style="width: 180px">
-    <div class="header-nav-current-user css-truncate"><a role="menuitem" class="no-underline user-profile-link px-3 pt-2 pb-2 mb-n2 mt-n1 d-block" href="/tarantej" data-ga-click="Header, go to profile, text:Signed in as">Signed in as <strong class="css-truncate-target">tarantej</strong></a></div>
+    <div class="HD-nav-current-user css-truncate"><a role="menuitem" class="no-underline user-profile-link px-3 pt-2 pb-2 mb-n2 mt-n1 d-block" href="/tarantej" data-ga-click="Header, go to profile, text:Signed in as">Signed in as <strong class="css-truncate-target">tarantej</strong></a></div>
     <div role="none" class="dropdown-divider"></div>
 
       <div class="pl-3 pr-3 f6 user-status-container js-user-status-context pb-1" data-url="/users/status?compact=1&amp;link_mentions=0&amp;truncate=1">
@@ -417,9 +417,9 @@
     <summary class="btn-link btn-block link-gray no-underline js-toggle-user-status-edit toggle-user-status-edit "
       role="menuitem" data-hydro-click="{&quot;event_type&quot;:&quot;user_profile.click&quot;,&quot;payload&quot;:{&quot;profile_user_id&quot;:181234,&quot;target&quot;:&quot;EDIT_USER_STATUS&quot;,&quot;user_id&quot;:21302579,&quot;originating_url&quot;:&quot;https://github.com/sendgrid/python-http-client/blob/master/.env_sample&quot;}}" data-hydro-click-hmac="243aec4a0619c68339b08e4458cbd20557d1e3cc534f4e86321bc2ddaf487a9b">
       <div class="d-flex">
-        <div class="f6 lh-condensed user-status-header
+        <div class="f6 lh-condensed user-status-HD
           d-inline-block v-align-middle
-            user-status-emoji-only-header circle
+            user-status-emoji-only-HD circle
             pr-2
 "
             style="max-width: 29px"
@@ -443,7 +443,7 @@
     </summary>
     <details-dialog class="details-dialog rounded-1 anim-fade-in fast Box Box--overlay" role="dialog" tabindex="-1">
       <!-- '"` --><!-- </textarea></xmp> --></option></form><form class="position-relative flex-auto js-user-status-form" action="/users/status?compact=1&amp;link_mentions=0&amp;truncate=1" accept-charset="UTF-8" method="post"><input type="hidden" name="_method" value="put" /><input type="hidden" name="authenticity_token" value="EVRfMC5I8azLaWnmtSCMJGjS3EC7ROJBHutVnsLbHQ6z2Pbms0jN4yAmPDxtRnicE7M62LN89Kr2vttfGBKbAw==" />
-        <div class="Box-header bg-gray border-bottom p-3">
+        <div class="Box-HD bg-gray border-bottom p-3">
           <button class="Box-btn-octicon js-toggle-user-status-edit btn-octicon float-right" type="reset" aria-label="Close dialog" data-close-dialog>
             <svg class="octicon octicon-x" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" clip-rule="evenodd" d="M3.72 3.72C3.86062 3.57955 4.05125 3.50066 4.25 3.50066C4.44875 3.50066 4.63937 3.57955 4.78 3.72L8 6.94L11.22 3.72C11.2887 3.64631 11.3715 3.58721 11.4635 3.54622C11.5555 3.50523 11.6548 3.48319 11.7555 3.48141C11.8562 3.47963 11.9562 3.49816 12.0496 3.53588C12.143 3.5736 12.2278 3.62974 12.299 3.70096C12.3703 3.77218 12.4264 3.85702 12.4641 3.9504C12.5018 4.04379 12.5204 4.14382 12.5186 4.24452C12.5168 4.34523 12.4948 4.44454 12.4538 4.53654C12.4128 4.62854 12.3537 4.71134 12.28 4.78L9.06 8L12.28 11.22C12.3537 11.2887 12.4128 11.3715 12.4538 11.4635C12.4948 11.5555 12.5168 11.6548 12.5186 11.7555C12.5204 11.8562 12.5018 11.9562 12.4641 12.0496C12.4264 12.143 12.3703 12.2278 12.299 12.299C12.2278 12.3703 12.143 12.4264 12.0496 12.4641C11.9562 12.5018 11.8562 12.5204 11.7555 12.5186C11.6548 12.5168 11.5555 12.4948 11.4635 12.4538C11.3715 12.4128 11.2887 12.3537 11.22 12.28L8 9.06L4.78 12.28C4.63782 12.4125 4.44977 12.4846 4.25547 12.4812C4.06117 12.4777 3.87579 12.399 3.73837 12.2616C3.60096 12.1242 3.52225 11.9388 3.51882 11.7445C3.51539 11.5502 3.58752 11.3622 3.72 11.22L6.94 8L3.72 4.78C3.57955 4.63938 3.50066 4.44875 3.50066 4.25C3.50066 4.05125 3.57955 3.86063 3.72 3.72Z"></path></svg>
           </button>
@@ -651,7 +651,7 @@
 
   </div>
 
-</header>
+</HD>
 
         
 
@@ -747,7 +747,7 @@
 </summary>        <details-menu
           class="select-menu-modal position-absolute mt-5"
           style="z-index: 99;">
-          <div class="select-menu-header">
+          <div class="select-menu-HD">
             <span class="select-menu-title">Notifications</span>
           </div>
           <div class="select-menu-list">
@@ -858,7 +858,7 @@
       src="/sendgrid/python-http-client/fork?fragment=1"
       preload
     >
-    <div class="Box-header">
+    <div class="Box-HD">
       <button class="Box-btn-octicon btn-octicon float-right" type="button" aria-label="Close dialog" data-close-dialog>
         <svg height="16" class="octicon octicon-x" viewBox="0 0 16 16" version="1.1" width="16" aria-hidden="true"><path fill-rule="evenodd" clip-rule="evenodd" d="M3.72 3.72C3.86062 3.57955 4.05125 3.50066 4.25 3.50066C4.44875 3.50066 4.63937 3.57955 4.78 3.72L8 6.94L11.22 3.72C11.2887 3.64631 11.3715 3.58721 11.4635 3.54622C11.5555 3.50523 11.6548 3.48319 11.7555 3.48141C11.8562 3.47963 11.9562 3.49816 12.0496 3.53588C12.143 3.5736 12.2278 3.62974 12.299 3.70096C12.3703 3.77218 12.4264 3.85702 12.4641 3.9504C12.5018 4.04379 12.5204 4.14382 12.5186 4.24452C12.5168 4.34523 12.4948 4.44454 12.4538 4.53654C12.4128 4.62854 12.3537 4.71134 12.28 4.78L9.06 8L12.28 11.22C12.3537 11.2887 12.4128 11.3715 12.4538 11.4635C12.4948 11.5555 12.5168 11.6548 12.5186 11.7555C12.5204 11.8562 12.5018 11.9562 12.4641 12.0496C12.4264 12.143 12.3703 12.2278 12.299 12.299C12.2278 12.3703 12.143 12.4264 12.0496 12.4641C11.9562 12.5018 11.8562 12.5204 11.7555 12.5186C11.6548 12.5168 11.5555 12.4948 11.4635 12.4538C11.3715 12.4128 11.2887 12.3537 11.22 12.28L8 9.06L4.78 12.28C4.63782 12.4125 4.44977 12.4846 4.25547 12.4812C4.06117 12.4777 3.87579 12.399 3.73837 12.2616C3.60096 12.1242 3.52225 11.9388 3.51882 11.7445C3.51539 11.5502 3.58752 11.3622 3.72 11.22L6.94 8L3.72 4.78C3.57955 4.63938 3.50066 4.44875 3.50066 4.25C3.50066 4.05125 3.57955 3.86063 3.72 3.72Z"></path></svg>
 
@@ -1105,7 +1105,7 @@
     <div class="Box mt-3 position-relative
       ">
       
-<div class="Box-header py-2 d-flex flex-column flex-shrink-0 flex-md-row flex-md-items-center">
+<div class="Box-HD py-2 d-flex flex-column flex-shrink-0 flex-md-row flex-md-items-center">
   <div class="text-mono f6 flex-auto pr-3 flex-order-2 flex-md-order-1 mt-2 mt-md-0">
 
       1 lines (1 sloc)

@@ -30,7 +30,7 @@
 
     /* slicknav mobile menu active  */
     $('.mobile-menu').slicknav({
-        prependTo: '.navbar-header',
+        prependTo: '.navbar-HD',
         parentTag: 'liner',
         allowParentLinks: true,
         duplicate: true,
