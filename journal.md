@@ -137,7 +137,13 @@ Content-Type: JSON
 	"eventDescription" : "The Fundamentals of Tribo-Sensing Course is essentially designed to give a better understanding of successful mechanism operations on all scales. The primary agenda of this course is to deliver insights into the principles of Tribology. The course offers sublime latitude to obtain an overview of the vast field of Tribo- Sensing. It will address the metrology & sensing techniques of tribology systems along with the core concepts and understanding of various tools. This program presents thorough insights into tribology focusing on such fundamental concepts as lubrication, traction, friction wear mechanisms, and surface engineering."
 }
 																									
-																									
+July 4 2020
+
+Added React App to main project
+
+https://www.youtube.com/watch?v=GieYIzvdt2U
+
+http://v1k45.com/blog/modern-django-part-1-setting-up-django-and-react/
 																									
 																									
 																									
