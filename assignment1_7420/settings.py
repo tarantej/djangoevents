@@ -36,6 +36,7 @@ ALLOWED_HOSTS = [
 
 INSTALLED_APPS = [
     'app',
+    'frontend',
     'rest_framework',
     'django.contrib.staticfiles',
     'events.apps.EventsConfig',
