@@ -124,7 +124,7 @@ Uploaded Django REST API branch to heroku. Tested GET and POST Requests.
 
 Tutorial: https://devcenter.heroku.com/articles/git
 
-URL: http://djangoevents.live/app/api/app
+URL: http://djangoevents.live/api/events-list, http://djangoevents.live/api/location-list, http://djangoevents.live/api/attendee-list
 
 Sample Parameters
 
@@ -144,7 +144,9 @@ Added React App to main project
 https://www.youtube.com/watch?v=GieYIzvdt2U
 
 http://v1k45.com/blog/modern-django-part-1-setting-up-django-and-react/
-																									
+																				July 5 2020
+																				
+Added Attendee and Location Models to Ajango API with Serializers and ViewSets																				
 																									
 																									
 																									
