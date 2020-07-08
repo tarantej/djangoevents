@@ -146,7 +146,15 @@ https://www.youtube.com/watch?v=GieYIzvdt2U
 http://v1k45.com/blog/modern-django-part-1-setting-up-django-and-react/
 																				July 5 2020
 																				
-Added Attendee and Location Models to Ajango API with Serializers and ViewSets																				
+Added Attendee and Location Models to Ajango API with Serializers and ViewSets	
+
+July 7 2020
+
+Added React App with Material UI via Python app. Did not go as planned
+
+july 8 2020
+
+Re created React App and added to project folder with Material UI. Added Drawer component
 																									
 																									
 																									
