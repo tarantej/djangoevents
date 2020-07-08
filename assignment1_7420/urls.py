@@ -24,7 +24,7 @@ urlpatterns = [
                   path('', views.index, name='index'),
                   path('about/', views.about, name='about'),
                   path('events/', include('events.urls')),
-                  path('frontend/', include('frontend.urls')),
+                  # path('frontend/', include('frontend.urls')),
                   path('api/', include('app.urls')),
 
 
