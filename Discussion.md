@@ -277,15 +277,51 @@ We did not use Kubernetes because we felt that our application is way too small 
 Deployment:-
 
 1. What is Amazon S3 used for?-
+
+Amazon Simple Storage Service is storage for the Internet. It is designed to make web-scale computing easier for developers.
+
+Amazon S3 has a simple web services interface that you can use to store and retrieve any amount of data, at any time, from anywhere on the web. It gives any developer access to the same highly scalable, reliable, fast, inexpensive data storage infrastructure that Amazon uses to run its own global network of web sites. The service aims to maximize benefits of scale and to pass those benefits on to developers.
+
 2. What is Amazon ECS?-
+
+Amazon Elastic Container Service (Amazon ECS) is a fully managed container orchestration service. Amazon Elastic Container Service (Amazon ECS) allows you to easily run, scale, and secure Docker container applications on AWS. Applications packaged as containers locally will deploy and run in the same way as containers managed by Amazon ECS. Amazon ECS eliminates the need to install, operate, and scale your own container orchestration and cluster management infrastructure, and allows you to focus on the resource needs and availability requirements of your containerized application.
+
 3. What is the difference between ECS Fargate and EC2?-
+
+There are two major models for how to run your containers on AWS:
+
+EC2 (Deploy and manage your own cluster of EC2 instances for running the containers)
+AWS Fargate (Run containers directly, without any EC2 instances)
+Both are completely valid techniques for operating your containers in a scalable and reliable fashion. Which one you pick primarily depends on which factors you want to optimize for.
+
 4. Name 3 other cloud providers.-
+
+Microsoft Azure
+Zoho One
+Google Cloud
+
 5. What is Sentry and what is it used for?-
+
+Sentry provides self-hosted and cloud-based error monitoring that helps all software teams discover, triage, and prioritize errors in real-time.
+
 6. What is Cloudflare and what is it used for?-
-7. What is SendGrid andwhat is it used for?-
+
+CloudFlare is a network of data centers that sits between your web server and the rest of the internet. ... This does two things: CloudFlare can serve cached static web content to the visitor, and screen visitors to make certain they are good and not traffic coming from an attack, malicious bots, or other bad things.
+
+7. What is SendGrid and what is it used for?-
+
+SendGrid is a cloud-based SMTP provider that allows you to send email without having to maintain email servers. SendGrid manages all of the technical details, from scaling the infrastructure to ISP outreach and reputation monitoring to whitelist services and real time analytics.
+
 8. What is the difference between a DNS A record and a CNAME record?
+
+The A record maps a name to one or more IP addresses when the IP are known and stable. The CNAME record maps a name to another name. It should only be used when there are no other records on that name. The ALIAS record maps a name to another name, but can coexist with other records on that name.
 
 Meta:-
 
 1. What are some of the mistakes or difficulties you encountered in developing these 2 assignments?-
-2. What have you learned from this course that you think might beuseful in your career?
+
+I personally acknowledge that I could have done both the assignments better had there not been constraints in regards to time and other assignments. Having not worked with React, Material UI and AWS was particularly challenging
+
+2. What have you learned from this course that you think might be useful in your career?
+
+I am glad I took this course which helped get up to speed about the latest trends going on. Each and every aspect, from Python and Django, to APIs, from AWS to Docker, React, Material UI, is priceless in terms of advancing my career for the future
