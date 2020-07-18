@@ -6,8 +6,6 @@ URL (heroku): https://djangoeventapp.herokuapp.com/
 
 URL (Live): http://www.djangoevents.live/
 
-Created by: Tarantej Singh (ID: 1522652)
-
 #About the Application
 
 This application combines the concept of booking online events with the power of e commerce applications. It makes registering for an event a breeze not just for the audience, but for the organization representatives participating in it as well.
