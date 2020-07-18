@@ -2,12 +2,13 @@ asgiref
 boto3
 dj-database-url
 django~=3.0.7
-django-heroku
+django-heroku==0.3.1
 gunicorn
 Jinja2
 MarkupSafe
 Pillow
 psycopg2
+python-dateutil==1.5
 pytz
 six
 sqlparse

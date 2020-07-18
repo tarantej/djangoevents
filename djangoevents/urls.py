@@ -1,4 +1,4 @@
-"""assignment1_7420 URL Configuration
+"""djangoevents URL Configuration
 
 The `urlpatterns` list routes URLs to views. For more information please see:
     https://docs.djangoproject.com/en/3.0/topics/http/urls/
@@ -20,17 +20,16 @@ from django.urls import include, path
 from . import views
 
 urlpatterns = [
-                  path('admin/', admin.site.urls),
-                  path('', views.index, name='index'),
-                  path('about/', views.about, name='about'),
-                  path('events/', include('events.urls')),
-                  # path('frontend/', include('frontend.urls')),
-                  path('api/', include('app.urls')),
+    path('admin/', admin.site.urls),
+    path('', views.index, name='index'),
+    path('about/', views.about, name='about'),
+    path('events/', include('events.urls')),
+    # path('frontend/', include('frontend.urls')),
+    path('api/', include('app.urls')),
 
+    # path('events/', views.events_index, name='events_index'),
+    # path('events/add_events', views.add_events, name='add_events'),
 
-                  # path('events/', views.events_index, name='events_index'),
-                  # path('events/add_events', views.add_events, name='add_events'),
+]
 
-              ]
-
-              # + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+# + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
